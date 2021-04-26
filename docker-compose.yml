@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  blazorchatsample.server:
+    image: ${DOCKER_REGISTRY-}blazorchatsample
+    build:
+      context: .
+      dockerfile: BlazorChatSample.Server/Dockerfile
